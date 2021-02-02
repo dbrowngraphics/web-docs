@@ -1,0 +1,347 @@
+html, body, #sidebar-wrapper, #page-contnet-wrapper {
+    height: 100%;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.hide {
+    display: none;
+}
+
+.highlight {
+    background-color: rgba(235, 255, 0, 0.25);
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#sidebar-wrapper {
+    background: #353535;
+    height: 100%;
+    width: 250px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.75);
+}
+
+#sidebar-content {
+    background: #242424;
+    height: auto;
+    width: 100%;
+}
+
+.sidebar-brand {
+    background: #184195;
+    margin-bottom: 40px;
+    padding: 20px 5px 10px;
+}
+
+.sidebar-nav li {
+    position: relative;
+}
+
+.sidebar-nav li a.active {
+    color: #d07114;
+}
+
+.sidebar-nav li span.glyphicon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.navbar-default {
+    background: #e2e2e2;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.navbar-static-top {
+    z-index: 900;
+}
+
+.navbar-top-links {
+    margin-right: 0;
+}
+
+.navbar-top-links li {
+    display: inline-block;
+    padding: 0px 20px 0;
+    margin-bottom: -3px;
+}
+
+.navbar-form {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 8px;
+}
+
+#menu-toggle {
+    background: #353535;
+    border: none;
+    border-left: 1px solid #d1d1d1;
+    border-radius: 0;
+    color: #e2e2e2;
+    float: right;
+    font-size: 2em;
+    height: 49px;
+    margin: 0;
+    padding: 8px 0 0 0;
+    width: 49px;
+}
+
+#menu-toggle:hover {
+    background: #e2e2e2;
+    color: #242424;
+}
+
+.icon-box, .icon-circle {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.icon-box {
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.icon-box:hover {
+    background: #eeeeee;
+}
+
+.icon-circle {
+    background: #f6653c;
+    border-radius: 50%;
+    color: #ffffff;
+    height: 75px;
+    line-height: 75px;
+    /*margin: 0 auto;*/
+    text-align: center;
+    vertical-align: middle;
+    width: 75px;
+}
+
+.icon-header {
+    color: #444444;
+    margin: 15px 0 10px;
+    text-transform: uppercase;;
+}
+
+.icon-description {
+    /*border-radius: 5px;*/
+    padding: 10px;
+}
+
+.table>tbody>tr>td {
+    font-size: 14px;
+    padding: 2px 5px;
+    vertical-align: middle;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    /*background: #ccd9e6;*/
+    background: #e2ecef;
+}
+
+.table>tbody>tr {
+    /*border: 2px solid #aaaaaa;*/
+    border: none;
+    border-left: 1px solid #aaaaaa;
+}
+
+.table>tbody>tr>td:last-child,
+.table>tbody>tr.danger>td:last-child,
+.table>tbody>tr.warning>td:last-child,
+.table>tbody>tr.inactive>td:last-child,
+.table>tbody>tr.no-file-server>td:last-child,
+.table>tbody>tr>td:nth-last-child(2),
+.table>tbody>tr.danger>td:nth-last-child(2),
+.table>tbody>tr.warning>td:nth-last-child(2),
+.table>tbody>tr.inactive>td:nth-last-child(2),
+.table>tbody>tr.no-file-server>td:nth-last-child(2) {
+    background: #f8f8f8;
+    border: none;
+}
+
+.table>tbody>tr.danger>td {
+    /*background-color: #ec5251;*/
+    background-color: rgba(236, 82, 81, 0.25);
+    /*background-color: #b81800;*/
+    /*background-color: #c33a26;*/
+    /*background-color: #e47376;*/
+}
+
+.table>tbody>tr.warning>td {
+    background-color: rgba(235, 189, 11, 0.25);
+    /*background-color: #f5eabd;*/
+/*    background-color: #ebbd0b;
+    background-color: #f0ce48;*/
+}
+
+.table>tbody>tr.no-file-server>td {
+    background-color: rgba(240, 173, 78, 0.5);
+}
+
+.inactive {
+    /*color: #ff4848;*/
+    font-style: italic;
+}
+
+.table>thead>tr>th, .center {
+    border: none;
+    text-align: center;
+}
+
+.table>tbody>tr>td {
+    border-bottom: 1px solid #aaaaaa;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #aaaaaa;
+}
+
+.table>tbody>tr>td:nth-last-child(3) {
+    border-right: 1px solid #aaaaaa;
+}
+
+
+/**************** Filelist ****************/
+ul#file_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#file_list li {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 5px 0;
+}
+
+ul#file_list li:last-child {
+    /*border-bottom: none;*/
+}
+
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  min-height: 70px;
+}
+
+/********************************** Modal File Upload **********************************/
+.modal-body .row{
+    position: relative;
+}
+
+.inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+    padding: 0 214px;
+    text-align: center;
+}
+
+input{
+    padding-left: 8px;
+}
+
+input:disabled + label{
+    color: #cccccc;
+    cursor: not-allowed;
+}
+
+.modal-body .row{
+    margin-bottom: 10px;
+}
+
+#modal_update .modal-body label, #fileModal .modal-body label{
+    float: right;
+    /*text-align: right;*/
+}
+
+.modal-body input, .modal-body textarea{
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    resize: none;
+    width: 100%;
+}
+
+.modal-body input:focus, .modal-body textarea:focus{
+    outline: none;
+    border-bottom: 1px solid #9ecaed;
+    box-shadow: 0 2px 5px 0 #9ecaed;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+/*    position: absolute;
+    z-index: -1;*/
+    position: inherit;
+}
+
+.modal-body label#labelFile {
+    clear: both;
+    float: right;
+    padding:  0;
+}
+
+span#btn {
+    padding: 3px 6px !important;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+}
+
+#modal-error{
+
+}
+
+.alert {
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+/********************************** TypeAhead **********************************/
+ul.typeahead {
+    width: 300px;
+}
+
+ul.typeahead li {
+    padding: 0;
+    width: 100%;
+}
+
+#key_inactive {
+    height: 15px;
+    width: 15px;
+    background: rgba(236, 82, 81, 0.25);
+    float: left;
+    border: 1px solid #808080;
+}
+
+#key_not_exist {
+    height: 15px;
+    width: 15px;
+    background: rgba(235, 189, 11, 0.25);
+    float: left;
+    border: 1px solid #808080;
+}
+
+#key_no_file_server {
+    height: 15px;
+    width: 15px;
+    background: rgba(240, 173, 78, 0.5);
+    float: left;
+    border: 1px solid #808080;
+}
